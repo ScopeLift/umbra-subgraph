@@ -158,9 +158,7 @@
     "type": "function"
   },
   {
-    "inputs": [
-      { "internalType": "uint256", "name": "_newToll", "type": "uint256" }
-    ],
+    "inputs": [{ "internalType": "uint256", "name": "_newToll", "type": "uint256" }],
     "name": "setToll",
     "outputs": [],
     "stateMutability": "nonpayable",
@@ -219,16 +217,12 @@
   {
     "inputs": [],
     "name": "tollReceiver",
-    "outputs": [
-      { "internalType": "address payable", "name": "", "type": "address" }
-    ],
+    "outputs": [{ "internalType": "address payable", "name": "", "type": "address" }],
     "stateMutability": "view",
     "type": "function"
   },
   {
-    "inputs": [
-      { "internalType": "address", "name": "newOwner", "type": "address" }
-    ],
+    "inputs": [{ "internalType": "address", "name": "newOwner", "type": "address" }],
     "name": "transferOwnership",
     "outputs": [],
     "stateMutability": "nonpayable",
