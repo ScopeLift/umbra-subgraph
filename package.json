@@ -11,6 +11,7 @@
     "deploy": "graph deploy --node https://api.thegraph.com/deploy/ ScopeLift/umbra-subgraph",
     "prepare:mainnet": "mustache config/mainnet.json subgraph.template.yaml > subgraph.yaml",
     "prepare:polygon": "mustache config/polygon.json subgraph.template.yaml > subgraph.yaml",
+    "prettier": "prettier --write .",
     "remove-local": "graph remove --node http://localhost:8020/ ScopeLift/umbra-subgraph"
   },
   "dependencies": {
@@ -18,6 +19,7 @@
     "@graphprotocol/graph-ts": "0.23.1"
   },
   "devDependencies": {
-    "mustache": "^4.2.0"
+    "mustache": "^4.2.0",
+    "prettier": "^2.4.1"
   }
 }
