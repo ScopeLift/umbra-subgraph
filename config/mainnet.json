@@ -1,0 +1,8 @@
+{
+  "network": "mainnet",
+  "contracts": {
+    "umbra": {
+      "startBlock": 12343914
+    }
+  }
+}

@@ -1,6 +1,8 @@
-type ExampleEntity @entity {
+type AnnouncementEntity @entity {
   id: ID!
-  count: BigInt!
   receiver: Bytes! # address
   amount: BigInt! # uint256
+  token: Bytes! # address
+  pkx: Bytes! # bytes32
+  ciphertext: Bytes! # bytes32
 }
