@@ -1,4 +1,4 @@
-import { Announcement } from '../generated/Umbra/Umbra';
+import { Announcement, OwnershipTransferred, TokenWithdrawal } from '../generated/Umbra/Umbra';
 import { AnnouncementEntity } from '../generated/schema';
 
 export function handleAnnouncement(event: Announcement): void {
@@ -42,4 +42,12 @@ export function handleAnnouncement(event: Announcement): void {
   // - contract.toll(...)
   // - contract.tollCollector(...)
   // - contract.tollReceiver(...)
+}
+
+export function handleOwnershipTransferred(event: OwnershipTransferred): void {
+  // do nothing
+}
+
+export function handleTokenWithdrawal(event: TokenWithdrawal): void {
+  // do nothing
 }
