@@ -1,0 +1,8 @@
+{
+  "network": "rinkeby",
+  "contracts": {
+    "umbra": {
+      "startBlock": 8505089
+    }
+  }
+}
