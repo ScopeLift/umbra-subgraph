@@ -8,7 +8,7 @@ dataSources:
     source:
       address: "0xFb2dc580Eed955B528407b4d36FfaFe3da685401"
       abi: Umbra
-      startBlock: {{contracts.grantRegistry.startBlock}}
+      startBlock: {{contracts.umbra.startBlock}}
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
