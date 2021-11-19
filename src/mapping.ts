@@ -18,6 +18,10 @@ export function handleAnnouncement(event: Announcement): void {
   entity.token = event.params.token;
   entity.pkx = event.params.pkx;
   entity.ciphertext = event.params.ciphertext;
+  entity.timestamp = event.block.timestamp;
+  entity.block = event.block.number;
+  entity.txHash = event.transaction.hash;
+  entity.from = event.transaction.from;
 
   // Entities can be written to the store with `.save()`
   entity.save();

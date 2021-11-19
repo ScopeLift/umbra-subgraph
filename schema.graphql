@@ -5,4 +5,8 @@ type AnnouncementEntity @entity {
   token: Bytes! # address
   pkx: Bytes! # bytes32
   ciphertext: Bytes! # bytes32
+  timestamp: BigInt! # uint256
+  block: BigInt! # uint256
+  txHash: Bytes! # bytes32
+  from: Bytes! # address
 }
