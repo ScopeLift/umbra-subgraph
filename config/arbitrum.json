@@ -1,0 +1,8 @@
+{
+  "network": "arbitrum-one",
+  "contracts": {
+    "umbra": {
+      "startBlock": 7285883
+    }
+  }
+}
