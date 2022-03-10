@@ -1,0 +1,8 @@
+{
+  "network": "optimism",
+  "contracts": {
+    "umbra": {
+      "startBlock": 4069556
+    }
+  }
+}
