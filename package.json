@@ -1,6 +1,6 @@
 {
   "name": "umbra-subgraph",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "build": "graph build",
     "codegen": "graph codegen",
