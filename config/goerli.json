@@ -1,0 +1,8 @@
+{
+  "network": "goerli",
+  "contracts": {
+    "umbra": {
+      "startBlock": 7718444
+    }
+  }
+}
