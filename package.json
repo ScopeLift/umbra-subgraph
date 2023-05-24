@@ -13,16 +13,19 @@
     "deploy:optimism": "yarn build && yarn codegen && yarn prepare:optimism && graph deploy --node https://api.thegraph.com/deploy/ ScopeLift/UmbraOptimism",
     "deploy:polygon": "yarn build && yarn codegen && yarn prepare:polygon && graph deploy --node https://api.thegraph.com/deploy/ ScopeLift/UmbraPolygon",
     "deploy:rinkeby": "yarn build && yarn codegen && yarn prepare:rinkeby && graph deploy --node https://api.thegraph.com/deploy/ ScopeLift/UmbraRinkeby",
+    "deploy:sepolia": "yarn build && yarn codegen && yarn prepare:sepolia && goldsky subgraph deploy 'umbra-sepolia/v1.0.0",
     "prepare:arbitrumOne": "mustache config/arbitrum.json subgraph.template.yaml > subgraph.yaml",
     "prepare:goerli": "mustache config/goerli.json subgraph.template.yaml > subgraph.yaml",
     "prepare:mainnet": "mustache config/mainnet.json subgraph.template.yaml > subgraph.yaml",
     "prepare:optimism": "mustache config/optimism.json subgraph.template.yaml > subgraph.yaml",
     "prepare:polygon": "mustache config/polygon.json subgraph.template.yaml > subgraph.yaml",
     "prepare:rinkeby": "mustache config/rinkeby.json subgraph.template.yaml > subgraph.yaml",
+    "prepare:sepolia": "mustache config/sepolia.json subgraph.template.yaml > subgraph.yaml",
     "prettier": "prettier --write .",
     "remove-local": "graph remove --node http://localhost:8020/ ScopeLift/umbra"
   },
   "dependencies": {
+    "@goldskycom/cli": "^1.8.0",
     "@graphprotocol/graph-cli": "0.50.0",
     "@graphprotocol/graph-ts": "0.30.0"
   },
