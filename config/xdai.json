@@ -1,0 +1,8 @@
+{
+    "network": "xdai",
+    "contracts": {
+      "umbra": {
+        "startBlock": 28237949
+      }
+    }
+}
