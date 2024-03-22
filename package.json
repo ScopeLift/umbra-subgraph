@@ -7,6 +7,7 @@
     "create-local": "graph create --node http://localhost:8020/ ScopeLift/umbra",
     "deploy:all": "yarn deploy:polygon && yarn deploy:mainnet && yarn deploy:arbitrumOne && yarn deploy:optimism && yarn deploy:sepolia && yarn deploy:xdai",
     "deploy:arbitrumOne": "yarn build && yarn codegen && yarn prepare:arbitrumOne && goldsky subgraph deploy umbra-arbitrum-one/v1.1.0",
+    "deploy:base": "yarn build && yarn codegen && yarn prepare:base && node script/deploy_base.js",
     "deploy:local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 ScopeLift/umbra",
     "deploy:mainnet": "yarn build && yarn codegen && yarn prepare:arbitrumOne && goldsky subgraph deploy umbra-mainnet/v1.1.0",
     "deploy:optimism": "yarn build && yarn codegen && yarn prepare:arbitrumOne && goldsky subgraph deploy umbra-optimism/v1.1.0",
@@ -14,6 +15,7 @@
     "deploy:sepolia": "yarn build && yarn codegen && yarn prepare:sepolia && goldsky subgraph deploy umbra-sepolia/v1.1.0",
     "deploy:xdai": "yarn build && yarn codegen && yarn prepare:xdai && goldsky subgraph deploy umbra-xdai/v1.1.0",
     "prepare:arbitrumOne": "mustache config/arbitrum.json subgraph.template.yaml > subgraph.yaml",
+    "prepare:base": "mustache config/base.json subgraph.template.yaml > subgraph.yaml",
     "prepare:mainnet": "mustache config/mainnet.json subgraph.template.yaml > subgraph.yaml",
     "prepare:optimism": "mustache config/optimism.json subgraph.template.yaml > subgraph.yaml",
     "prepare:polygon": "mustache config/polygon.json subgraph.template.yaml > subgraph.yaml",
@@ -25,7 +27,9 @@
   "dependencies": {
     "@goldskycom/cli": "^1.8.0",
     "@graphprotocol/graph-cli": "0.50.0",
-    "@graphprotocol/graph-ts": "0.30.0"
+    "@graphprotocol/graph-ts": "0.30.0",
+    "dotenv": "^16.4.5",
+    "shelljs": "^0.8.5"
   },
   "devDependencies": {
     "mustache": "^4.2.0",

@@ -1,0 +1,8 @@
+{
+  "network": "base",
+  "contracts": {
+    "umbra": {
+      "startBlock": 10761374
+    }
+  }
+}
