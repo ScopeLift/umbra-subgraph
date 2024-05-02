@@ -7,7 +7,7 @@
 3. Authenticate with `yarn graph auth https://api.thegraph.com/deploy/ <access-token>`
 4. Deploy with `yarn deploy:<network>`
 
-Note: For the Base network subgraph (which is deployed to Alchemy), step 3 above should be skipped, and it will be necessary to create a .env file with the following content, to authenticate access to that subgraph:
+Note: For the networks whose subgraph deployed to Alchemy (which is currently Base), step 3 above should be skipped, and it will be necessary to create a .env file with the following content, to authenticate access to that subgraph:
 
 ```
 BASE_DEPLOY_KEY=<access-token>
