@@ -10,3 +10,16 @@ type AnnouncementEntity @entity {
   txHash: Bytes! # bytes32
   from: Bytes! # address
 }
+
+type StealthKeyChangedEntity @entity {
+  id: ID!
+  registrant: Bytes! # address
+  spendingPubKeyPrefix: BigInt! # uint256
+  spendingPubKey: BigInt! # uint256
+  viewingPubKeyPrefix: BigInt! # uint256
+  viewingPubKey: BigInt! # uint256
+  timestamp: BigInt! # uint256
+  block: BigInt! # uint256
+  txHash: Bytes! # bytes32
+  from: Bytes! # address
+}

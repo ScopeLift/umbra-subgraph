@@ -28,3 +28,23 @@ dataSources:
         - event: TokenWithdrawal(indexed address,indexed address,uint256,indexed address)
           handler: handleTokenWithdrawal
       file: ./src/mapping.ts
+  - kind: ethereum/contract
+    name: StealthKeyRegistry
+    network: {{ network }}
+    source:
+      address: "0x31fe56609C65Cd0C510E7125f051D440424D38f3"
+      abi: StealthKeyRegistry
+      startBlock: {{contracts.umbra.startBlock}}
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - StealthKeyChanged
+      abis:
+        - name: StealthKeyRegistry
+          file: ./abis/StealthKeyRegistry.json
+      eventHandlers:
+        - event:   StealthKeyChanged(indexed address,uint256,uint256,uint256,uint256)
+          handler: handleStealthKeyChanged
+      file: ./src/mapping.ts
