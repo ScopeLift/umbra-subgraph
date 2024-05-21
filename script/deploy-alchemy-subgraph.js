@@ -12,6 +12,6 @@ if (!deployKey) {
 }
 console.log(`Deploying umbra-${network} subgraph to Alchemy...`);
 console.log(`Using deploy key: ${deployKey}`);
-const command = `graph deploy umbra-${network} --version-label v1.1.1 --node https://subgraphs.alchemy.com/api/subgraphs/deploy --deploy-key ${deployKey} --ipfs https://ipfs.satsuma.xyz`;
+const command = `graph deploy umbra-${network} --version-label v1.1.4 --node https://subgraphs.alchemy.com/api/subgraphs/deploy --deploy-key ${deployKey} --ipfs https://ipfs.satsuma.xyz`;
 
 shell.exec(command);
