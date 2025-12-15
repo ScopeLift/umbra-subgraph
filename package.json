@@ -7,7 +7,7 @@
     "create-local": "graph create --node http://localhost:8020/ ScopeLift/umbra",
     "deploy:all": "yarn deploy:polygon && yarn deploy:mainnet && yarn deploy:arbitrumOne && yarn deploy:optimism && yarn deploy:sepolia && yarn deploy:xdai",
     "deploy:arbitrumOne": "yarn prepare:arbitrumOne && yarn codegen && yarn build && graph deploy --node https://api.studio.thegraph.com/deploy/ umbra-arbitrumOne --version-label v0.0.1",
-    "deploy:base": "yarn prepare:base && yarn codegen && yarn build && graph deploy --node https://api.studio.thegraph.com/deploy/ umbra-dev --version-label v0.0.1",
+    "deploy:base": "yarn prepare:base && yarn codegen && yarn build && graph deploy --node https://api.studio.thegraph.com/deploy/ umbra-base --version-label v0.0.1",
     "deploy:local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 ScopeLift/umbra",
     "deploy:mainnet": "yarn prepare:mainnet && yarn codegen && yarn build && graph deploy --node https://api.studio.thegraph.com/deploy/ umbra-mainnet --version-label v0.0.1",
     "deploy:optimism": "yarn prepare:optimism && yarn codegen && yarn build && graph deploy --node https://api.studio.thegraph.com/deploy/ umbra-optimism --version-label v0.0.1",
